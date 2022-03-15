@@ -1,5 +1,5 @@
 # Desafio Técnico - Dev Doutor Multas 2022
-## ⌨ Desafio Técnico - Doutor Multas
+### ⌨ Desafio Técnico - Doutor Multas
 
 # 🎈 Background
 
@@ -15,78 +15,78 @@ Responda as perguntas a seguir com base no seu conhecimento prévio com desenvol
 
 ➡ Antes de iniciar, crie um repositório privado no [GitHub](https://github.com/) e compartilhe com o usuário [doutormultas](https://github.com/doutormultas). Coloque as resposta no Readme do repositório.
 
-1. Qual (ou quais) linguagem de programação você costuma usar?
-```
-JavaScript é minha primeira linguagem de programação. No momento, estou focando meu aprendizado apenas nesta linguagem e suas derivações como TypeScript, por exemplo. Futuramente, irei aprender Python e Java. 
-```
+## 1. Qual (ou quais) linguagem de programação você costuma usar?
 
-2. Fale sobre algo que você já tenha desenvolvido durante:
-    1. Seus estudos em programação;
+JavaScript é minha primeira linguagem de programação. No momento, estou focando meu aprendizado apenas nesta linguagem e suas derivações como TypeScript, por exemplo. Futuramente, irei aprender Python e Java. 
+
+
+## 2. Fale sobre algo que você já tenha desenvolvido durante:
+    ### 1. Seus estudos em programação;
 
     Participei de 2 hackathons e em um deles criamos um website em ReactJS com um banco de vagas para mulheres em situação de vulnerabilidade social e marginalidade (mulheres trans e cisgênero) ou em grupos de risco. Na @resilia-br também pude criar alguns projetos puros em CSS, HTML e JavaScript e uma livraria em ReactJS no último módulo.
 
 
-    2. Sua carreira como programador.
+    ### 2. Sua carreira como programador.
 
     Não tenho experiência prévia em programação, estou em fase de transição de carreira do web design para desenvolvimento web.
 
 
-3. Você conhece os princípios da Programação Orientada a Objetos SOLID?
-    1. Se sim, qual o mais importante para você?
+## 3. Você conhece os princípios da Programação Orientada a Objetos SOLID?
+    ### 1. Se sim, qual o mais importante para você?
 
     Para mim, o mais importante dentro destes princípios é o Princípio da Segregação de Interface, ou seja, muitas interfaces específicas são melhores para se trabalhar e fazer manutenções de código do que uma interface única.
 
 
-4. Você acaba de ser encarregado de um projeto de código legado com problemas de manutenção. Que tipo de coisas você procuraria melhorar para deixar o projeto estável?
+## 4. Você acaba de ser encarregado de um projeto de código legado com problemas de manutenção. Que tipo de coisas você procuraria melhorar para deixar o projeto estável?
 
     Primeiro processo seria comentar todo o código, para que ele ficasse compreensível e legível. Separaria por tópicos as funções e classes associadas a cada parte da aplicação e tentaria diminuir o tamanho do código, caso seja possível, porém apenas resumir aquilo que atrapalhe o entendimento do código.
 
 
-5. Você gosta de programar? O que te motiva a programar?
+## 5. Você gosta de programar? O que te motiva a programar?
 
     Amo programação desde criança. Comecei a mexer com HTML e CSS aos 12 anos, como uma brincadeira, fazendo blogs e sites na UOL usando interfaces bem simples. A partir daí aprendi muito do que sei hoje sobre JQuery, HTML, CSS e JavaScript. Hoje estou buscando novamente a área, porque foi algo que eu sempre gostei de fazer, mas acreditava que não era para mim. O que mais  me motiva a programar é o fato da programação te possibilitar a criar absolutamente qualquer ideia, resolver problemas e trazer soluções para as pessoas no mundo. Para mim, programar é muito mais do que mexer com código, é trazer soluções criativas e inovadoras para a sociedade.
 
 
-6. Você acaba de ser designado para um projeto em uma nova tecnologia, como você começaria?
+## 6. Você acaba de ser designado para um projeto em uma nova tecnologia, como você começaria?
 
     Antes de qualquer coisa, faria um estudo básico, lendo a documentação da tecnologia solicitada. Depois, eu tentaria criar algo básico nesta tecnologia para que eu pudesse aplicar os estudos na prática. Por fim, iniciaria o projeto de fato.
 
 
-7. Como você reage às pessoas criticando seu código/trabalho?
+## 7. Como você reage às pessoas criticando seu código/trabalho?
 
     Procuro ouvir as críticas construtivas e sugestões de código, assim posso aprender cada dia um pouco mais. Normalmente, gosto de receber críticas sobre meu trabalho, porque servem de aprimoramento e autoconhecimento. 
 
 
-8. Qual foi o último livro que você leu?
+## 8. Qual foi o último livro que você leu?
 
     O último livro que li foi um livro "A Mágica da Arrumação" que fala de organização pessoal, da personal organizer Mari Kondo. É um livro muito simples, mas que ajuda criarmos prioridades, descartar o que não agrega e organizar nossa vida em todos os aspectos.
 
 
-9. Descreva, com o máximo de detalhes que achar relevante, o mais profundamente possível, o que acontece quando digito "doutormultas.com.br" em um navegador e pressiono "Enter".
+## 9. Descreva, com o máximo de detalhes que achar relevante, o mais profundamente possível, o que acontece quando digito "doutormultas.com.br" em um navegador e pressiono "Enter".
 
     Vejo uma empresa com uma solução interessante, ágil e criativa para motoristas que foram multados por diversos motivos. Muitas vezes, as pessoas são multadas injustamente ou por motivos que não são exatamente passíveis de multa e é importante existir corporações voltadas para esse tipo de problema.  
 
-10. O que você faz quando fica preso a um problema que não consegue resolver?
+## 10. O que você faz quando fica preso a um problema que não consegue resolver?
 
     O primeiro passo é procurar na internet, porque muitas vezes nossas dúvidas e problemas são as mesmas de muita gente. Depois, caso não conseguisse obter uma resposta, procuraria uma segunda forma de realizar a solução do problema, por meio de outra ferramenta ou tecnologia, caso seja viável. 
 
-11. Conte-me sobre alguma vez que você tenha falhado.
+## 11. Conte-me sobre alguma vez que você tenha falhado.
 
     Este ano já falhei diversas vezes. A última foi hackathon da Adesampa, da Prefeitura de São Paulo, o qual tivemos um problema de deploy da API do site às duas horas da manhã e passamos praticamente a madrugada toda tentando subir para o Heroku, mas sem sucesso. Praticamente viramos a noite fazendo o projeto, porém por conta deste problema não conseguimos terminar a tempo.
 
-12. Você tem dois computadores e deseja obter dados de um para o outro. Como você poderia fazer isso?
+## 12. Você tem dois computadores e deseja obter dados de um para o outro. Como você poderia fazer isso?
 
     Eu uso o git e o github para passar dados de um PC para o outro. 
 
-13. Quando você sabe que seu código está pronto para produção?
+## 13. Quando você sabe que seu código está pronto para produção?
 
     Quando eu consigo ver que ele está funcionando perfeitamente e que inclusive seus bugs foram solucionados, na medida do possível.  
 
-14. Você está por conta própria, o que faria se terminasse seu trabalho antes do previsto?
+## 14. Você está por conta própria, o que faria se terminasse seu trabalho antes do previsto?
 
     Seguiria para o próximo, afinal cada projeto que podemos pegar, é um novo conhecimento que teremos, seja através da resolução de problemas como novas ferramentas e propriedades de código que podem nos ajudar em projetos futuros. 
 
-15. Quais blogs/sites/podcasts sobre programação você consome?
+## 15. Quais blogs/sites/podcasts sobre programação você consome?
 
     Gosto de ler o blog do freecodecamp, stackoverflow e assisto o canal Código Fonte no YouTube. Gosto de acompanhar alguns blogs estrangeiros de desenvolvimento web também.  
 
