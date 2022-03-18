@@ -1,5 +1,6 @@
 import Axios from "axios";
 import React, { useState, useEffect } from 'react';
+import { ListGroup } from "react-bootstrap";
 import IBrands from '../Brands';
 
 const Motos: React.FC = () => {
@@ -15,7 +16,7 @@ const Motos: React.FC = () => {
   // get marcas dos carros
   React.useEffect(() => {
     Axios
-      .get<IBrands[]>('https://parallelum.com.br/fipe/api/v1/caminhoes/marcas')
+      .get<IBrands[]>('https://parallelum.com.br/fipe/api/v1/motos/marcas')
       .then(response => {
         setMotorcycles(response.data);
         setLoading(false);
@@ -32,17 +33,17 @@ const Motos: React.FC = () => {
 
   return (
     <div>
-      <ul>
-        {/* cars.slice(0).reverse().map para inverter os dados */}
-        {motorcycles.map((motorBrands) => (
-          <li key={motorBrands.number}>
-            <h3>{motorBrands.nome}</h3>
-            <p>Código: {motorBrands.codigo}</p>
-          </li>
-        ))}
-      </ul>
-      {error && <p className="error">{error}</p>}
-    </div>
+    <ListGroup variant="flush">
+      {/* cars.slice(0).reverse().map para inverter os dados */}
+      {motorcycles.map((motorBrands) => (
+        <ListGroup.Item key={motorBrands.number}>
+          <h3>{motorBrands.nome}</h3>
+          <p>Código: {motorBrands.codigo}</p>
+        </ListGroup.Item>
+      ))}
+    </ListGroup>
+    {error && <p className="error">{error}</p>}
+  </div>
   )
 };
 

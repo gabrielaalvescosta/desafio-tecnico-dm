@@ -1,5 +1,6 @@
 import Axios from "axios";
 import React, { useState, useEffect } from 'react';
+import { ListGroup } from "react-bootstrap";
 import IBrands from '../Brands';
 
 const Caminhoes: React.FC = () => {
@@ -32,15 +33,15 @@ const Caminhoes: React.FC = () => {
 
   return (
     <div>
-      <ul>
+      <ListGroup variant="flush">
         {/* cars.slice(0).reverse().map para inverter os dados */}
         {trucks.map((truckBrands) => (
-          <li key={truckBrands.number}>
+          <ListGroup.Item key={truckBrands.number}>
             <h3>{truckBrands.nome}</h3>
             <p>Código: {truckBrands.codigo}</p>
-          </li>
+          </ListGroup.Item>
         ))}
-      </ul>
+      </ListGroup>
       {error && <p className="error">{error}</p>}
     </div>
   )

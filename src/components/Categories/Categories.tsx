@@ -8,7 +8,7 @@ interface ICategoriesProps {
 }
 
 const Categories: React.FunctionComponent<ICategoriesProps> = (props) => {
-  return <Accordion defaultActiveKey="0">
+  return <Accordion defaultActiveKey="0" flush>
     <Accordion.Item eventKey="0">
       <Accordion.Header>Carros</Accordion.Header>
       <Accordion.Body>
@@ -21,7 +21,7 @@ const Categories: React.FunctionComponent<ICategoriesProps> = (props) => {
         <Motos />
       </Accordion.Body>
     </Accordion.Item>
-    <Accordion.Item eventKey="1">
+    <Accordion.Item eventKey="2">
       <Accordion.Header>Caminhões</Accordion.Header>
       <Accordion.Body>
         <Caminhoes />
