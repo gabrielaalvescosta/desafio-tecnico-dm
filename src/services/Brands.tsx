@@ -1,5 +1,5 @@
 export default interface IBrands {
-    id: number | string;
+    number: number;
     nome: string;
     codigo: string;
 }

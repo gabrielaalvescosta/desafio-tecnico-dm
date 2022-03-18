@@ -2,11 +2,11 @@ import Axios from "axios";
 import React, { useState, useEffect } from 'react';
 import IBrands from '../Brands';
 
-const Carros: React.FC = () => {
+const Motos: React.FC = () => {
 
-  const pegaMarcas: IBrands[] = [];
+  const pegaMarcasMotos: IBrands[] = [];
 
-  const [cars, setCars]: [IBrands[], (carsBrands: IBrands[]) => void] = React.useState(pegaMarcas);
+  const [motorcycles, setMotorcycles]: [IBrands[], (motorBrands: IBrands[]) => void] = React.useState(pegaMarcasMotos);
   const [loading, setLoading]: [boolean, (loading: boolean) => void] = React.useState<boolean>(true);
   const [error, setError]: [string, (error: string) => void] = React.useState("");
 
@@ -15,9 +15,9 @@ const Carros: React.FC = () => {
   // get marcas dos carros
   React.useEffect(() => {
     Axios
-      .get<IBrands[]>('https://parallelum.com.br/fipe/api/v1/carros/marcas')
+      .get<IBrands[]>('https://parallelum.com.br/fipe/api/v1/caminhoes/marcas')
       .then(response => {
-        setCars(response.data);
+        setMotorcycles(response.data);
         setLoading(false);
       })
       .catch(ex => {
@@ -34,10 +34,10 @@ const Carros: React.FC = () => {
     <div>
       <ul>
         {/* cars.slice(0).reverse().map para inverter os dados */}
-        {cars.map((carsBrands) => (
-          <li key={carsBrands.number}>
-            <h3>{carsBrands.nome}</h3>
-            <p>Código: {carsBrands.codigo}</p>
+        {motorcycles.map((motorBrands) => (
+          <li key={motorBrands.number}>
+            <h3>{motorBrands.nome}</h3>
+            <p>Código: {motorBrands.codigo}</p>
           </li>
         ))}
       </ul>
@@ -46,5 +46,5 @@ const Carros: React.FC = () => {
   )
 };
 
-export default Carros;
+export default Motos;
 
