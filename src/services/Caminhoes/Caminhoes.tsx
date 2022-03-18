@@ -1,7 +1,8 @@
 import Axios from "axios";
 import React, { useState, useEffect } from 'react';
 import { ListGroup } from "react-bootstrap";
-import IBrands from '../Brands';
+import IBrands, { baseUrl } from "services/Brands";
+
 
 const Caminhoes: React.FC = () => {
 
@@ -16,7 +17,7 @@ const Caminhoes: React.FC = () => {
   // get marcas dos carros
   React.useEffect(() => {
     Axios
-      .get<IBrands[]>('https://parallelum.com.br/fipe/api/v1/caminhoes/marcas')
+      .get<IBrands[]>(`${baseUrl}caminhoes/marcas`)
       .then(response => {
         setTrucks(response.data);
         setLoading(false);
@@ -35,8 +36,8 @@ const Caminhoes: React.FC = () => {
     <div>
       <ListGroup variant="flush">
         {/* cars.slice(0).reverse().map para inverter os dados */}
-        {trucks.map((truckBrands) => (
-          <ListGroup.Item key={truckBrands.number}>
+        {trucks.map((truckBrands, index) => (
+          <ListGroup.Item key={index}>
             <h3>{truckBrands.nome}</h3>
             <p>Código: {truckBrands.codigo}</p>
           </ListGroup.Item>

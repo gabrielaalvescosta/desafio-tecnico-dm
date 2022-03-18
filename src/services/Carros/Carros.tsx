@@ -1,7 +1,8 @@
 import Axios from "axios";
 import React, { useState, useEffect } from 'react';
 import { ListGroup } from "react-bootstrap";
-import IBrands from '../Brands';
+import { NavLink, Link } from 'react-router-dom';
+import IBrands, { baseUrl } from "services/Brands";
 
 const Carros: React.FC = () => {
 
@@ -16,7 +17,7 @@ const Carros: React.FC = () => {
   // get marcas dos carros
   React.useEffect(() => {
     Axios
-      .get<IBrands[]>('https://parallelum.com.br/fipe/api/v1/carros/marcas')
+      .get<IBrands[]>(`${baseUrl}carros/marcas`)
       .then(response => {
         setCars(response.data);
         setLoading(false);
@@ -28,16 +29,16 @@ const Carros: React.FC = () => {
             : "An unexpected error has occurred";
         setError(error);
         setLoading(false);
-      });;
+      });
   }, []);
 
   return (
     <div>
     <ListGroup variant="flush">
       {/* cars.slice(0).reverse().map para inverter os dados */}
-      {cars.map((carsBrands) => (
-        <ListGroup.Item key={carsBrands.number}>
-          <h3>{carsBrands.nome}</h3>
+      {cars.map((carsBrands, index) => (
+        <ListGroup.Item key={index}>
+          <NavLink to={`/products/${carsBrands.number}`}><h3>{carsBrands.nome}</h3></NavLink>
           <p>Código: {carsBrands.codigo}</p>
         </ListGroup.Item>
       ))}
