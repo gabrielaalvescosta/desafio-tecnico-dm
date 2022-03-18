@@ -1,7 +1,14 @@
-import React from 'react'
+import * as React from 'react';
+import { Container } from 'react-bootstrap';
+import Categories from '../../components/Categories/Categories';
 
-export default function Home() {
-  return (
-    <div>Home</div>
-  )
+interface IHomeProps {
 }
+
+const Home: React.FunctionComponent<IHomeProps> = (props) => {
+  return <Container>
+            <Categories/>
+         </Container>;
+};
+
+export default Home;

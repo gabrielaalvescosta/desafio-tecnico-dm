@@ -1,7 +1,10 @@
-import React from 'react'
+import * as React from 'react';
 
-export default function Footer() {
-  return (
-    <div>Footer</div>
-  )
+interface IAppProps {
 }
+
+const App: React.FunctionComponent<IAppProps> = (props) => {
+  return <>Footer</>;
+};
+
+export default App;
