@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Accordion } from 'react-bootstrap';
-import Api from '../../services/Api';
+import Carros from '../../services/Carros/Carros';
 
 interface ICategoriesProps {
 }
@@ -11,7 +11,7 @@ const Categories: React.FunctionComponent<ICategoriesProps> = (props) => {
     <Accordion.Header>Carros</Accordion.Header>
     <Accordion.Body>
 
-      <Api/>
+      <Carros/>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
       veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
